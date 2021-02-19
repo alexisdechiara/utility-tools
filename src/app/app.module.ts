@@ -10,15 +10,7 @@ import { TextConverterComponent } from './text-converter/text-converter.componen
 import { ValueConverterComponent } from './value-converter/value-converter.component';
 import { GeneratorComponent } from './generator/generator.component';
 import { CalculatorComponent } from './calculator/calculator.component';
-import {MatToolbarModule} from '@angular/material/toolbar';
-import {MatIconModule} from '@angular/material/icon';
-import {MatButtonModule} from '@angular/material/button';
-
-const MaterialComponents = [
-  MatToolbarModule,
-  MatIconModule,
-  MatButtonModule
-];
+import { MaterialModule } from './material/material.module';
 
 @NgModule({
   declarations: [
@@ -32,11 +24,11 @@ const MaterialComponents = [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MaterialComponents,
-    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
+    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
+    MaterialModule
   ],
   exports: [
-    MaterialComponents
+    MaterialModule
   ],
   providers: [],
   bootstrap: [AppComponent]
