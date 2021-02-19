@@ -10,6 +10,15 @@ import { TextConverterComponent } from './text-converter/text-converter.componen
 import { ValueConverterComponent } from './value-converter/value-converter.component';
 import { GeneratorComponent } from './generator/generator.component';
 import { CalculatorComponent } from './calculator/calculator.component';
+import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatIconModule} from '@angular/material/icon';
+import {MatButtonModule} from '@angular/material/button';
+
+const MaterialComponents = [
+  MatToolbarModule,
+  MatIconModule,
+  MatButtonModule
+];
 
 @NgModule({
   declarations: [
@@ -23,7 +32,11 @@ import { CalculatorComponent } from './calculator/calculator.component';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    MaterialComponents,
     ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
+  ],
+  exports: [
+    MaterialComponents
   ],
   providers: [],
   bootstrap: [AppComponent]
