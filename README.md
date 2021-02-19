@@ -1,27 +1,21 @@
-# UtilityTools
-
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.1.
-
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+# Cahier des charges
+## Présentation du projet
+Ce projet aura pour finalité de réaliser un site web permettant de regrouper différentes fonctions utiles pour améliorer la productivité et permettre de réaliser des calculs **utiles**. Ce site se basera sur une seule page (single page) et sera hébergé sur un serveur Free.
+### Cible
+Tous type de personnes voulant réaliser des actions simple sans avoir avoir à faire de calcul, de conversions ou nécessitant l’utilisation de fonction
+### Rôle des intervenants
+Le projet fera intervenir 4 personnes :
+  - Alexis De Chiara : Gestion et partie “vue”
+  - Teo Garbarino : Contrôleur
+  - Thomas Guiot : Contrôleur
+  - jasmine Riabi : Contrôleur 
+## Contenu
+### Ressources
+#### Language : HTML5, SCSS, typescript
+#### Framework : Angular
+#### Design : Material design
+### Caractéristiques et étendue des services
+Les différents services proposés sont :
+  - Un service permettant de convertir des textes et des valeurs du système métrique
+  - Un service proposant diverses générations aléatoires (nombre, date, etc …)
+  - Si possible, un service proposant divers calculs (moyenne, pourcentage, vitesse, etc …)
