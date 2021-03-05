@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import {ManagerService} from './services/manager.service';
 
 @Component({
@@ -6,10 +6,17 @@ import {ManagerService} from './services/manager.service';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.sass']
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
   title = 'utility-tools';
+
+  tools: any[] | undefined;
 
   constructor(private manager: ManagerService){
   }
+
+  ngOnInit(): void {
+    this.tools = this.manager.tools;
+  }
+
 
 }
