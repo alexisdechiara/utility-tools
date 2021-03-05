@@ -11,6 +11,7 @@ import { ValueConverterComponent } from './value-converter/value-converter.compo
 import { GeneratorComponent } from './generator/generator.component';
 import { CalculatorComponent } from './calculator/calculator.component';
 import { MaterialModule } from './material/material.module';
+import { ManagerService} from './services/manager.service';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,7 @@ import { MaterialModule } from './material/material.module';
   exports: [
     MaterialModule
   ],
-  providers: [],
+  providers: [ManagerService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
