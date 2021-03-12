@@ -1,9 +1,12 @@
-<div class="row">
-  <mat-form-field appearance="fill">
+<div class="title">
+  <h1>Convertisseur de volume</h1>
+</div>
+<div class="row center">
+  <mat-form-field appearance="outline" class="forms">
     <mat-label>Valeur</mat-label>
     <input matInput [(ngModel)]="valueInput" >
   </mat-form-field>
-  <mat-form-field appearance="fill">
+  <mat-form-field appearance="outline" class="forms">
     <mat-label>Préfixe</mat-label>
     <mat-select [(value)]="prefixInput" >
       <mat-option value="kilo">Kilo</mat-option>
@@ -15,19 +18,22 @@
       <mat-option value="milli">Milli</mat-option>
     </mat-select>
   </mat-form-field>
-  <mat-form-field appearance="fill">
+  <mat-form-field appearance="outline" class="forms">
     <mat-label>Système métrique</mat-label>
     <mat-select [(value)]="metricInput">
       <mat-option value="liter">Litre</mat-option>
     </mat-select>
   </mat-form-field>
 </div>
-<div class="row">
-  <mat-form-field appearance="fill">
+<div class="row center">
+  <mat-icon class="row">south</mat-icon>
+</div>
+<div class="row center">
+  <mat-form-field appearance="outline" class="forms">
     <mat-label>Résultat</mat-label>
     <input [readonly]="true" matInput value="{{valueOutput()}}" >
   </mat-form-field>
-  <mat-form-field appearance="fill">
+  <mat-form-field appearance="outline" class="forms">
     <mat-label>Préfixe</mat-label>
     <mat-select [(value)]="prefixOutput" >
       <mat-option value="kilo">Kilo</mat-option>
@@ -39,7 +45,7 @@
       <mat-option value="milli">Milli</mat-option>
     </mat-select>
   </mat-form-field>
-  <mat-form-field appearance="fill">
+  <mat-form-field appearance="outline" class="forms">
     <mat-label>Système métrique</mat-label>
     <mat-select [(value)]="metricOutput">
       <mat-option value="liter">Litre</mat-option>

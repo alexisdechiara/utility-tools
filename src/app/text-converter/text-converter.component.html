@@ -1,42 +1,48 @@
+<div class="title">
+  <h1>Convertisseur de texte</h1>
+</div>
 <!--Input-->
-  <div class="input-content">
+  <div class="center input-content">
     <mat-form-field appearance="outline">
       <mat-label>Insérez votre texte ici</mat-label>
       <textarea matInput type="text" cdkTextareaAutosize #autosize="cdkTextareaAutosize" cdkAutosizeMinRows="1" cdkAutosizeMaxRows="10" [(ngModel)]="textInput"></textarea>
     </mat-form-field>
   </div>
   <!--Output-->
-<div class="output-contents">
-  <mat-card class="output-card">
+<div class="output-card">
+  <mat-card class="center">
+    <mat-card-header>
+      <mat-card-title>Résultat</mat-card-title>
+    </mat-card-header>
     <mat-card-content>
-          <mat-form-field class="output-content row" appearance="outline">
+          <mat-form-field class="center output-content" appearance="outline">
             <mat-label>Minuscule</mat-label>
             <textarea [readonly]="true" matInput cdkTextareaAutosize #autosize="cdkTextareaAutosize" cdkAutosizeMinRows="1" cdkAutosizeMaxRows="10">{{convertToLowerCase()}}</textarea>
           </mat-form-field>
 
-          <mat-form-field class="output-content row" appearance="outline">
+          <mat-form-field class="center" appearance="outline">
             <mat-label>Majuscule</mat-label>
             <textarea [readonly]="true" matInput cdkTextareaAutosize #autosize="cdkTextareaAutosize" cdkAutosizeMinRows="1" cdkAutosizeMaxRows="10">{{convertToUpperCase()}}</textarea>
           </mat-form-field>
 
-          <mat-form-field class="output-content row" appearance="outline">
+          <mat-form-field class="center" appearance="outline">
             <mat-label>Phrase</mat-label>
             <textarea [readonly]="true" matInput cdkTextareaAutosize #autosize="cdkTextareaAutosize" cdkAutosizeMinRows="1" cdkAutosizeMaxRows="10">{{convertToSentenceCase()}}</textarea>
           </mat-form-field>
 
-          <mat-form-field class="output-content row" appearance="outline">
+          <mat-form-field class="center" appearance="outline">
             <mat-label>Titre</mat-label>
             <textarea [readonly]="true" matInput cdkTextareaAutosize #autosize="cdkTextareaAutosize" cdkAutosizeMinRows="1" cdkAutosizeMaxRows="10">{{convertToTitleCase()}}</textarea>
           </mat-form-field>
 
-          <mat-form-field class="output-content row" appearance="outline">
+          <mat-form-field class="center" appearance="outline">
             <mat-label>Inversé</mat-label>
-            <textarea [readonly]="true" matInput cdkTextareaAutosize #autosize="cdkTextareaAutosize" cdkAutosizeMinRows="1" cdkAutosizeMaxRows="10"></textarea>
+            <textarea [readonly]="true" matInput cdkTextareaAutosize #autosize="cdkTextareaAutosize" cdkAutosizeMinRows="1" cdkAutosizeMaxRows="10">{{convertToInvert()}}</textarea>
           </mat-form-field>
 
-          <mat-form-field class="output-content row" appearance="outline">
+          <mat-form-field class="center" appearance="outline">
             <mat-label>Retourné</mat-label>
-            <textarea style="width:500px" [readonly]="true" matInput cdkTextareaAutosize #autosize="cdkTextareaAutosize" cdkAutosizeMinRows="1" cdkAutosizeMaxRows="10"></textarea>
+            <textarea [readonly]="true" matInput cdkTextareaAutosize #autosize="cdkTextareaAutosize" cdkAutosizeMinRows="1" cdkAutosizeMaxRows="10"></textarea>
           </mat-form-field>
     </mat-card-content>
   </mat-card>

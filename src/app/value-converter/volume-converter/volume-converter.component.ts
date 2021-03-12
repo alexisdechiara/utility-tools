@@ -14,7 +14,13 @@ export class VolumeConverterComponent implements OnInit {
   metricOutput = 'liter';
 
   valueOutput(): string {
-    return (this.fromUnit(this.toUnit(Number(this.valueInput), this.prefixInput), this.prefixOutput)).toString();
+    const value = (this.fromUnit(this.toUnit(Number(this.valueInput), this.prefixInput), this.prefixOutput));
+    if (value === 0){
+      return '';
+    }
+    else{
+      return value.toString();
+    }
   }
 
   toUnit(value: number, prefix: string): number{
