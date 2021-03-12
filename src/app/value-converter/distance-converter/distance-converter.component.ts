@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-volume-converter',
-  templateUrl: './volume-converter.component.html',
-  styleUrls: ['./volume-converter.component.sass']
+  selector: 'app-distance-converter',
+  templateUrl: './distance-converter.component.html',
+  styleUrls: ['./distance-converter.component.sass']
 })
-export class VolumeConverterComponent implements OnInit {
+export class DistanceConverterComponent implements OnInit {
 
   valueInput = '';
   prefixInput = '';
@@ -19,7 +19,8 @@ export class VolumeConverterComponent implements OnInit {
       return '';
     }
     else{
-      return value.toLocaleString('fr-FR').toString();    }
+      return value.toLocaleString('fr-FR').toString();
+    }
   }
 
   toUnit(value: number, prefix: string): number{

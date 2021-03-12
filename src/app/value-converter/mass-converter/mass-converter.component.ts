@@ -1,11 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-volume-converter',
-  templateUrl: './volume-converter.component.html',
-  styleUrls: ['./volume-converter.component.sass']
+  selector: 'app-mass-converter',
+  templateUrl: './mass-converter.component.html',
+  styleUrls: ['./mass-converter.component.sass']
 })
-export class VolumeConverterComponent implements OnInit {
+export class MassConverterComponent implements OnInit {
+
 
   valueInput = '';
   prefixInput = '';
@@ -19,7 +20,8 @@ export class VolumeConverterComponent implements OnInit {
       return '';
     }
     else{
-      return value.toLocaleString('fr-FR').toString();    }
+      return value.toLocaleString('fr-FR').toString();
+    }
   }
 
   toUnit(value: number, prefix: string): number{

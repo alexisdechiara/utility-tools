@@ -14,6 +14,10 @@ import { MaterialModule } from './material/material.module';
 import { ManagerService} from './services/manager.service';
 import {FormsModule} from '@angular/forms';
 import { VolumeConverterComponent } from './value-converter/volume-converter/volume-converter.component';
+import { MassConverterComponent } from './value-converter/mass-converter/mass-converter.component';
+import { DistanceConverterComponent } from './value-converter/distance-converter/distance-converter.component';
+import { SpeedConverterComponent } from './value-converter/speed-converter/speed-converter.component';
+import { TimeConverterComponent } from './value-converter/time-converter/time-converter.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +26,11 @@ import { VolumeConverterComponent } from './value-converter/volume-converter/vol
     ValueConverterComponent,
     GeneratorComponent,
     CalculatorComponent,
-    VolumeConverterComponent
+    VolumeConverterComponent,
+    MassConverterComponent,
+    DistanceConverterComponent,
+    SpeedConverterComponent,
+    TimeConverterComponent
   ],
   imports: [
     BrowserModule,

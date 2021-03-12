@@ -1,5 +1,5 @@
 <div class="title">
-  <h1>Convertisseur de volume</h1>
+  <h1>Convertisseur de vitesse</h1>
 </div>
 <div class="row center">
   <mat-form-field appearance="outline" class="forms">
@@ -19,9 +19,18 @@
     </mat-select>
   </mat-form-field>
   <mat-form-field appearance="outline" class="forms">
-    <mat-label>unité</mat-label>
+    <mat-label>Unité</mat-label>
     <mat-select [(value)]="unitInput">
-      <mat-option value="liter">Litre</mat-option>
+      <mat-option value="meter">Mètre</mat-option>
+    </mat-select>
+  </mat-form-field>
+  <mat-form-field appearance="outline" class="forms">
+    <mat-label>Temps</mat-label>
+    <mat-select [(value)]="timeInput">
+      <mat-option value="seconde">Seconde</mat-option>
+      <mat-option value="minute">Minute</mat-option>
+      <mat-option value="hour">Heure</mat-option>
+      <mat-option value="day">Jour</mat-option>
     </mat-select>
   </mat-form-field>
 </div>
@@ -48,7 +57,16 @@
   <mat-form-field appearance="outline" class="forms">
     <mat-label>Unité</mat-label>
     <mat-select [(value)]="unitOutput">
-      <mat-option value="liter">Litre</mat-option>
+      <mat-option value="meter">Mètre</mat-option>
+    </mat-select>
+  </mat-form-field>
+  <mat-form-field appearance="outline" class="forms">
+    <mat-label>Temps</mat-label>
+    <mat-select [(value)]="timeOutput">
+      <mat-option value="seconde">Seconde</mat-option>
+      <mat-option value="minute">Minute</mat-option>
+      <mat-option value="hour">Heure</mat-option>
+      <mat-option value="day">Jour</mat-option>
     </mat-select>
   </mat-form-field>
 </div>
