@@ -18,6 +18,10 @@ import { MassConverterComponent } from './value-converter/mass-converter/mass-co
 import { DistanceConverterComponent } from './value-converter/distance-converter/distance-converter.component';
 import { SpeedConverterComponent } from './value-converter/speed-converter/speed-converter.component';
 import { TimeConverterComponent } from './value-converter/time-converter/time-converter.component';
+import { AngleConverterComponent } from './value-converter/angle-converter/angle-converter.component';
+import { IntensityConverterComponent } from './value-converter/intensity-converter/intensity-converter.component';
+import { SubstanceConverterComponent } from './value-converter/substance-converter/substance-converter.component';
+import { LuminousConverterComponent } from './value-converter/luminous-converter/luminous-converter.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +34,11 @@ import { TimeConverterComponent } from './value-converter/time-converter/time-co
     MassConverterComponent,
     DistanceConverterComponent,
     SpeedConverterComponent,
-    TimeConverterComponent
+    TimeConverterComponent,
+    AngleConverterComponent,
+    IntensityConverterComponent,
+    SubstanceConverterComponent,
+    LuminousConverterComponent
   ],
   imports: [
     BrowserModule,

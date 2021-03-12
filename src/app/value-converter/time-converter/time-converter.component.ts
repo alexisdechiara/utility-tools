@@ -9,8 +9,8 @@ export class TimeConverterComponent implements OnInit {
 
 
   valueInput = '';
-  unitInput = '';
-  unitOutput = 'liter';
+  unitInput = 'minute';
+  unitOutput = 'seconde';
 
   valueOutput(): string {
     const value = (this.fromUnit(this.toUnit(Number(this.valueInput), this.unitInput), this.unitOutput));

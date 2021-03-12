@@ -9,9 +9,9 @@ export class DistanceConverterComponent implements OnInit {
 
   valueInput = '';
   prefixInput = '';
-  unitInput = 'liter';
+  unitInput = 'meter';
   prefixOutput = '';
-  unitOutput = 'liter';
+  unitOutput = 'meter';
 
   valueOutput(): string {
     const value = (this.fromUnit(this.toUnit(Number(this.valueInput), this.prefixInput), this.prefixOutput));

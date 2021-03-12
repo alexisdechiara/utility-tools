@@ -1,18 +1,17 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-mass-converter',
-  templateUrl: './mass-converter.component.html',
-  styleUrls: ['./mass-converter.component.sass']
+  selector: 'app-luminous-converter',
+  templateUrl: './luminous-converter.component.html',
+  styleUrls: ['./luminous-converter.component.sass']
 })
-export class MassConverterComponent implements OnInit {
-
+export class LuminousConverterComponent implements OnInit {
 
   valueInput = '';
   prefixInput = '';
-  unitInput = 'gram';
+  unitInput = 'lumen';
   prefixOutput = '';
-  unitOutput = 'gram';
+  unitOutput = 'lumen';
 
   valueOutput(): string {
     const value = (this.fromUnit(this.toUnit(Number(this.valueInput), this.prefixInput), this.prefixOutput));
@@ -20,8 +19,7 @@ export class MassConverterComponent implements OnInit {
       return '';
     }
     else{
-      return value.toLocaleString('fr-FR').toString();
-    }
+      return value.toLocaleString('fr-FR').toString();    }
   }
 
   toUnit(value: number, prefix: string): number{
