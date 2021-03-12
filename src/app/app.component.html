@@ -11,7 +11,7 @@
   <mat-drawer #drawer  mode ="over" style="width: 20%;">
       <mat-list>
         <mat-list-item>
-          <button mat-icon-button aria-label="icon-button with menu icon" (click)="drawer.toggle()"><mat-icon matListIcon >menu</mat-icon></button>
+          <button mat-icon-button aria-label="icon-button with menu icon" (click)="drawer.toggle()"><mat-icon matListIcon ng>menu</mat-icon></button>
           <h1 matLine>Utility tools</h1>
         </mat-list-item>
       </mat-list>
@@ -72,7 +72,6 @@
     </mat-expansion-panel>
   </mat-drawer>
   <mat-drawer-content>
-<p>
   <mat-toolbar color="primary">
     <button mat-icon-button aria-label="icon-button with menu icon" (click)="drawer.toggle()">
       <mat-icon>menu</mat-icon>
@@ -85,7 +84,9 @@
       <button mat-menu-item>Dark mode</button>
     </mat-menu>
   </mat-toolbar>
-</p>
+    <div class="tools">
+        <app-text-converter ></app-text-converter>
+    </div>
   </mat-drawer-content>
 </mat-drawer-container>
 

@@ -12,6 +12,7 @@ import { GeneratorComponent } from './generator/generator.component';
 import { CalculatorComponent } from './calculator/calculator.component';
 import { MaterialModule } from './material/material.module';
 import { ManagerService} from './services/manager.service';
+import {FormsModule} from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -25,8 +26,9 @@ import { ManagerService} from './services/manager.service';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
-    MaterialModule
+    ServiceWorkerModule.register('ngsw-worker.js', {enabled: environment.production}),
+    MaterialModule,
+    FormsModule
   ],
   exports: [
     MaterialModule
