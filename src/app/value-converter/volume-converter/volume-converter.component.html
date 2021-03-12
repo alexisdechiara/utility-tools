@@ -1,0 +1,48 @@
+<div class="row">
+  <mat-form-field appearance="fill">
+    <mat-label>Valeur</mat-label>
+    <input matInput [(ngModel)]="valueInput" >
+  </mat-form-field>
+  <mat-form-field appearance="fill">
+    <mat-label>Préfixe</mat-label>
+    <mat-select [(value)]="prefixInput" >
+      <mat-option value="kilo">Kilo</mat-option>
+      <mat-option value="hecto">Hecto</mat-option>
+      <mat-option value="deca">Déca</mat-option>
+      <mat-option value="none"></mat-option>
+      <mat-option value="deci">Déci</mat-option>
+      <mat-option value="centi">Centi</mat-option>
+      <mat-option value="milli">Milli</mat-option>
+    </mat-select>
+  </mat-form-field>
+  <mat-form-field appearance="fill">
+    <mat-label>Système métrique</mat-label>
+    <mat-select [(value)]="metricInput">
+      <mat-option value="liter">Litre</mat-option>
+    </mat-select>
+  </mat-form-field>
+</div>
+<div class="row">
+  <mat-form-field appearance="fill">
+    <mat-label>Résultat</mat-label>
+    <input [readonly]="true" matInput value="{{valueOutput()}}" >
+  </mat-form-field>
+  <mat-form-field appearance="fill">
+    <mat-label>Préfixe</mat-label>
+    <mat-select [(value)]="prefixOutput" >
+      <mat-option value="kilo">Kilo</mat-option>
+      <mat-option value="hecto">Hecto</mat-option>
+      <mat-option value="deca">Déca</mat-option>
+      <mat-option value="none"></mat-option>
+      <mat-option value="deci">Déci</mat-option>
+      <mat-option value="centi">Centi</mat-option>
+      <mat-option value="milli">Milli</mat-option>
+    </mat-select>
+  </mat-form-field>
+  <mat-form-field appearance="fill">
+    <mat-label>Système métrique</mat-label>
+    <mat-select [(value)]="metricOutput">
+      <mat-option value="liter">Litre</mat-option>
+    </mat-select>
+  </mat-form-field>
+</div>

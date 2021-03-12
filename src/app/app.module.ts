@@ -13,6 +13,7 @@ import { CalculatorComponent } from './calculator/calculator.component';
 import { MaterialModule } from './material/material.module';
 import { ManagerService} from './services/manager.service';
 import {FormsModule} from '@angular/forms';
+import { VolumeConverterComponent } from './value-converter/volume-converter/volume-converter.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import {FormsModule} from '@angular/forms';
     TextConverterComponent,
     ValueConverterComponent,
     GeneratorComponent,
-    CalculatorComponent
+    CalculatorComponent,
+    VolumeConverterComponent
   ],
   imports: [
     BrowserModule,
