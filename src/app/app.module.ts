@@ -22,6 +22,9 @@ import { AngleConverterComponent } from './value-converter/angle-converter/angle
 import { IntensityConverterComponent } from './value-converter/intensity-converter/intensity-converter.component';
 import { SubstanceConverterComponent } from './value-converter/substance-converter/substance-converter.component';
 import { LuminousConverterComponent } from './value-converter/luminous-converter/luminous-converter.component';
+import { LoremGeneratorComponent } from './generator/lorem-generator/lorem-generator.component';
+import { LetterGeneratorComponent } from './generator/letter-generator/letter-generator.component';
+import { NumberGeneratorComponent } from './generator/number-generator/number-generator.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +41,10 @@ import { LuminousConverterComponent } from './value-converter/luminous-converter
     AngleConverterComponent,
     IntensityConverterComponent,
     SubstanceConverterComponent,
-    LuminousConverterComponent
+    LuminousConverterComponent,
+    LoremGeneratorComponent,
+    LetterGeneratorComponent,
+    NumberGeneratorComponent
   ],
   imports: [
     BrowserModule,

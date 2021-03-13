@@ -1,0 +1,28 @@
+<div class="title"><h1>Générateur de nombres</h1></div>
+<div class="input center">
+  <mat-form-field class="forms" appearance="outline">
+    <mat-label>occurrences</mat-label>
+    <input matInput [(ngModel)]="nb">
+  </mat-form-field>
+  <mat-form-field class="forms" appearance="outline">
+    <mat-label>Minimum</mat-label>
+    <input matInput [(ngModel)]="min">
+  </mat-form-field>
+  <mat-form-field class="forms" appearance="outline">
+    <mat-label>Maximum</mat-label>
+    <input matInput [(ngModel)]="max">
+  </mat-form-field>
+  <mat-form-field class="type-form" appearance="outline">
+    <mat-select [(value)]="type" >
+      <mat-option value="integer">Entier</mat-option>
+      <mat-option value="float">Décimale</mat-option>
+    </mat-select>
+  </mat-form-field>
+  <button mat-raised-button color="primary" (click)="generate()">Obtenir</button>
+</div>
+
+<div class="output center">
+  <mat-form-field class="result" appearance="outline">
+    <textarea [readonly]="true" cdkScrollable cdkTextareaAutosize matInput cdkAutosizeMaxRows="10">{{output}}</textarea>
+  </mat-form-field>
+</div>
