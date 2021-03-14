@@ -25,6 +25,9 @@ import { LuminousConverterComponent } from './value-converter/luminous-converter
 import { LoremGeneratorComponent } from './generator/lorem-generator/lorem-generator.component';
 import { LetterGeneratorComponent } from './generator/letter-generator/letter-generator.component';
 import { NumberGeneratorComponent } from './generator/number-generator/number-generator.component';
+import { TimeGeneratorComponent } from './generator/time-generator/time-generator.component';
+import { PasswordGeneratorComponent } from './generator/password-generator/password-generator.component';
+import { ItemGeneratorComponent } from './generator/item-generator/item-generator.component';
 
 @NgModule({
   declarations: [
@@ -44,7 +47,10 @@ import { NumberGeneratorComponent } from './generator/number-generator/number-ge
     LuminousConverterComponent,
     LoremGeneratorComponent,
     LetterGeneratorComponent,
-    NumberGeneratorComponent
+    NumberGeneratorComponent,
+    TimeGeneratorComponent,
+    PasswordGeneratorComponent,
+    ItemGeneratorComponent
   ],
   imports: [
     BrowserModule,

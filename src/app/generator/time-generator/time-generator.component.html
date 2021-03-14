@@ -1,0 +1,27 @@
+<div class="title"><h1>Générateur de nombres</h1></div>
+<div class="input center">
+    <mat-card>
+      <mat-card-header>
+        <mat-card-title>Affichage</mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <ul>
+          <li><mat-checkbox [(ngModel)]="second">Seconde</mat-checkbox></li>
+          <li><mat-checkbox [(ngModel)]="minute">Minute</mat-checkbox></li>
+          <li><mat-checkbox [(ngModel)]="hour">Heure</mat-checkbox></li>
+          <li><mat-checkbox [(ngModel)]="day">Jour</mat-checkbox></li>
+          <li><mat-checkbox [(ngModel)]="month">Mois</mat-checkbox></li>
+          <li><mat-checkbox [(ngModel)]="year">Année</mat-checkbox></li>
+        </ul>
+      </mat-card-content>
+      <mat-card-actions>
+        <button mat-raised-button color="primary" (click)="generate()" >Obtenir</button>
+      </mat-card-actions>
+    </mat-card>
+</div>
+
+<div class="output center">
+  <mat-form-field class="result" appearance="outline">
+    <textarea [readonly]="true" cdkScrollable cdkTextareaAutosize matInput cdkAutosizeMaxRows="10">{{output}}</textarea>
+  </mat-form-field>
+</div>

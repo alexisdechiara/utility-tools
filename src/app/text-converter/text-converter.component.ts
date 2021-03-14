@@ -8,35 +8,6 @@ import { Component, OnInit } from '@angular/core';
 export class TextConverterComponent implements OnInit {
 
   textInput = '';
-  /*
-  const reverseKey = new Map([
-    ['a', 'ɐ'],
-    ['b', 'q'],
-    ['c', 'ɔ'],
-    ['d', 'p'],
-    ['e', 'ǝ'],
-    ['f', 'ɟ'],
-    ['g', 'ƃ'],
-    ['h', 'ɥ'],
-    ['i', 'ᴉ'],
-    ['j', 'ɾ'],
-    ['k', 'ʞ'],
-    ['l', 'l'],
-    ['m', 'ɯ'],
-    ['n', 'u'],
-    ['o', 'o'],
-    ['p', 'd'],
-    ['q', 'b'],
-    ['r', 'ɹ'],
-    ['s', 's'],
-    ['t', 'ʇ'],
-    ['u', 'n'],
-    ['v', 'ʌ'],
-    ['w', 'ʍ'],
-    ['x', 'x'],
-    ['y', 'ʎ'],
-    ['z', 'z']
-  ]);*/
 
   convertToLowerCase(): string {
     return this.textInput.toLowerCase();
@@ -51,12 +22,11 @@ export class TextConverterComponent implements OnInit {
   }
 
   convertToTitleCase(): string{
-    return this.textInput;
-    /*const words = this.textInput.split(' ');
-    for (let i = 0; i < words.length; i++) {
-      words[i] = words[i][0].toUpperCase() + words[i].substr(1);
+    const titleCase = this.textInput.toLowerCase().split(' ');
+    for (let i = 0; i < titleCase.length; i++) {
+      titleCase[i] = titleCase[i].charAt(0).toUpperCase() + titleCase[i].slice(1);
     }
-    return words.join(' ');*/
+    return titleCase.join(' ');
   }
 
   convertToInvert(): string{
@@ -75,13 +45,68 @@ export class TextConverterComponent implements OnInit {
     return s;
   }
 
-  /*
   convertToReverse(): string {
-    let reverse = this.textInput;
-    for (let i = 0; i < this.textInput.length; i++) {
-      reverse.charAt(reverse.length-1) = this.reverseKey.get(reverse.charAt(i));
+    const reverseKey = new Map([
+      ['a', 'ɐ'],
+      ['b', 'q'],
+      ['c', 'ɔ'],
+      ['d', 'p'],
+      ['e', 'ǝ'],
+      ['f', 'ɟ'],
+      ['g', 'ƃ'],
+      ['h', 'ɥ'],
+      ['i', 'ᴉ'],
+      ['j', 'ɾ'],
+      ['k', 'ʞ'],
+      ['l', 'l'],
+      ['m', 'ɯ'],
+      ['n', 'u'],
+      ['o', 'o'],
+      ['p', 'd'],
+      ['q', 'b'],
+      ['r', 'ɹ'],
+      ['s', 's'],
+      ['t', 'ʇ'],
+      ['u', 'n'],
+      ['v', 'ʌ'],
+      ['w', 'ʍ'],
+      ['x', 'x'],
+      ['y', 'ʎ'],
+      ['z', 'z'],
+      ['A', 'Ɐ'],
+      ['B', 'Q'],
+      ['C', 'Ɔ'],
+      ['D', 'P'],
+      ['E', 'Ǝ'],
+      ['F', 'ɟ'],
+      ['G', 'Ƃ'],
+      ['H', 'Ɥ'],
+      ['I', 'ᴉ'],
+      ['J', 'ɾ'],
+      ['K', 'Ʞ'],
+      ['L', 'L'],
+      ['M', 'Ɯ'],
+      ['N', 'U'],
+      ['O', 'O'],
+      ['P', 'D'],
+      ['Q', 'B'],
+      ['R', 'ɹ'],
+      ['S', 'S'],
+      ['T', 'Ʇ'],
+      ['U', 'N'],
+      ['V', 'Ʌ'],
+      ['W', 'ʍ'],
+      ['X', 'X'],
+      ['Y', 'ʎ'],
+      ['Z', 'Z'],
+      [' ', ' ']
+    ]);
+    let reverse = '';
+    for (let i = this.textInput.length - 1; i >= 0; i--) {
+      reverse += reverseKey.get(this.textInput[i]);
     }
-  }*/
+    return reverse;
+  }
 
 
 

@@ -20,12 +20,12 @@
       <mat-expansion-panel-header >Convertisseur de texte</mat-expansion-panel-header>
       <ng-template matExpansionPanelContent>
         <mat-selection-list>
-          <mat-list-option><mat-icon matListIcon>format_size</mat-icon><h3 matLine>Minuscule</h3></mat-list-option>
-          <mat-list-option><mat-icon matListIcon>text_fields</mat-icon><h3 matLine>Majuscule</h3></mat-list-option>
-          <mat-list-option><mat-icon matListIcon>short_text</mat-icon><h3 matLine>Phrase</h3></mat-list-option>
-          <mat-list-option><mat-icon matListIcon>Title</mat-icon><h3 matLine>Titre</h3></mat-list-option>
-          <mat-list-option><mat-icon matListIcon>align_vertical_center</mat-icon><h3 matLine>Inversé</h3></mat-list-option>
-          <mat-list-option><mat-icon matListIcon>align_horizontal_center</mat-icon><h3 matLine>Retourné</h3></mat-list-option>
+          <a routerLink="/converter/text"><mat-list-option><mat-icon matListIcon>format_size</mat-icon><h3 matLine>Minuscule</h3></mat-list-option></a>
+          <a routerLink="/converter/text"><mat-list-option><mat-icon matListIcon>text_fields</mat-icon><h3 matLine>Majuscule</h3></mat-list-option></a>
+          <a routerLink="/converter/text"><mat-list-option><mat-icon matListIcon>short_text</mat-icon><h3 matLine>Phrase</h3></mat-list-option></a>
+          <a routerLink="/converter/text"><mat-list-option><mat-icon matListIcon>Title</mat-icon><h3 matLine>Titre</h3></mat-list-option></a>
+          <a routerLink="/converter/text"><mat-list-option><mat-icon matListIcon>align_vertical_center</mat-icon><h3 matLine>Inversé</h3></mat-list-option></a>
+          <a routerLink="/converter/text"><mat-list-option><mat-icon matListIcon>align_horizontal_center</mat-icon><h3 matLine>Retourné</h3></mat-list-option></a>
         </mat-selection-list>
       </ng-template>
     </mat-expansion-panel>
@@ -33,14 +33,14 @@
       <mat-expansion-panel-header>Convertisseur de valeur</mat-expansion-panel-header>
       <ng-template matExpansionPanelContent>
         <mat-selection-list [multiple]="false">
-          <mat-list-option><mat-icon matListIcon>aspect_ratio</mat-icon><h3 matLine>Volume</h3></mat-list-option>
-          <mat-list-option><mat-icon matListIcon>fitness_center</mat-icon><h3 matLine>Masse</h3></mat-list-option>
-          <mat-list-option><mat-icon matListIcon>square_foot</mat-icon><h3 matLine>Distance</h3></mat-list-option>
-          <mat-list-option><mat-icon matListIcon>speed</mat-icon><h3 matLine>Vitesse</h3></mat-list-option>
-          <mat-list-option><mat-icon matListIcon>border_style</mat-icon><h3 matLine>Angle</h3></mat-list-option>
-          <mat-list-option><mat-icon matListIcon>bolt</mat-icon><h3 matLine>Intensité électrique</h3></mat-list-option>
-          <mat-list-option><mat-icon matListIcon>bubble_chart</mat-icon><h3 matLine>Quantité de matière</h3></mat-list-option>
-          <mat-list-option><mat-icon matListIcon>emoji_objects</mat-icon><h3 matLine>Quantité de lumière</h3></mat-list-option>
+          <a routerLink="/converter/volume"><mat-list-option><mat-icon matListIcon>aspect_ratio</mat-icon><h3 matLine>Volume</h3></mat-list-option></a>
+          <a routerLink="converter/mass"><mat-list-option><mat-icon matListIcon>fitness_center</mat-icon><h3 matLine>Masse</h3></mat-list-option></a>
+          <a routerLink="/converter/distance"><mat-list-option><mat-icon matListIcon>square_foot</mat-icon><h3 matLine>Distance</h3></mat-list-option></a>
+          <a routerLink="/converter/speed"><mat-list-option><mat-icon matListIcon>speed</mat-icon><h3 matLine>Vitesse</h3></mat-list-option></a>
+          <a routerLink="/converter/angle"><mat-list-option><mat-icon matListIcon>border_style</mat-icon><h3 matLine>Angle</h3></mat-list-option></a>
+          <a routerLink="/converter/intensity"><mat-list-option><mat-icon matListIcon>bolt</mat-icon><h3 matLine>Intensité électrique</h3></mat-list-option></a>
+          <a routerLink="/converter/substance-amount"><mat-list-option><mat-icon matListIcon>bubble_chart</mat-icon><h3 matLine>Quantité de matière</h3></mat-list-option></a>
+          <a routerLink="/converter/luminous-energy"><mat-list-option><mat-icon matListIcon>emoji_objects</mat-icon><h3 matLine>Quantité de lumière</h3></mat-list-option></a>
         </mat-selection-list>
       </ng-template>
     </mat-expansion-panel>
@@ -48,12 +48,12 @@
       <mat-expansion-panel-header>Générateur</mat-expansion-panel-header>
       <ng-template matExpansionPanelContent>
         <mat-selection-list [multiple]="false">
-          <mat-list-option><mat-icon matListIcon>format_align_left</mat-icon><h3 matLine>Lorem Ipsum</h3></mat-list-option>
-          <mat-list-option><mat-icon matListIcon>format_bold</mat-icon><h3 matLine>Lettre</h3></mat-list-option>
-          <mat-list-option><mat-icon matListIcon>exposure_zero</mat-icon><h3 matLine>Nombre</h3></mat-list-option>
-          <mat-list-option><mat-icon matListIcon>calendar_today</mat-icon><h3 matLine>Horaire</h3></mat-list-option>
-          <mat-list-option><mat-icon matListIcon>lock</mat-icon><h3 matLine>Mot de passe</h3></mat-list-option>
-          <mat-list-option><mat-icon matListIcon>table_chart</mat-icon><h3 matLine>Élément d'un tableau</h3></mat-list-option>
+          <a routerLink="/generator/lorem-ipsum"><mat-list-option><mat-icon matListIcon>format_align_left</mat-icon><h3 matLine>Lorem Ipsum</h3></mat-list-option></a>
+          <a routerLink="/generator/letter"><mat-list-option><mat-icon matListIcon>format_bold</mat-icon><h3 matLine>Lettre</h3></mat-list-option></a>
+          <a routerLink="/generator/number"><mat-list-option><mat-icon matListIcon>exposure_zero</mat-icon><h3 matLine>Nombre</h3></mat-list-option></a>
+          <a routerLink="/generator/date"><mat-list-option><mat-icon matListIcon>calendar_today</mat-icon><h3 matLine>Horaire</h3></mat-list-option></a>
+          <a routerLink="/generator/password"><mat-list-option><mat-icon matListIcon>lock</mat-icon><h3 matLine>Mot de passe</h3></mat-list-option></a>
+          <a routerLink="/generator/item"><mat-list-option><mat-icon matListIcon>table_chart</mat-icon><h3 matLine>Élément d'un tableau</h3></mat-list-option></a>
         </mat-selection-list>
       </ng-template>
     </mat-expansion-panel>
@@ -84,11 +84,9 @@
       <button mat-menu-item>Dark mode</button>
     </mat-menu>
   </mat-toolbar>
-    <div class="tools">
-      <!-- <app-text-converter></app-text-converter> -->
-      <!--<app-value-converter></app-value-converter>-->
-      <app-generator></app-generator>
-     </div>
+    <div class="content">
+      <router-outlet></router-outlet>
+    </div>
    </mat-drawer-content>
  </mat-drawer-container>
 
@@ -99,4 +97,3 @@
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 <!-- * * * * * * * * * * End of Placeholder * * * * * * * * * * * -->
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-<router-outlet></router-outlet>

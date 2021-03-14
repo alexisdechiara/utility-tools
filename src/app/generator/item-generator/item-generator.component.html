@@ -1,0 +1,18 @@
+<div class="title"><h1>Générateur de nombres</h1></div>
+<div class="input center">
+  <mat-form-field class="nb" appearance="outline">
+    <mat-label>Occurrences</mat-label>
+    <input [(ngModel)]="nb" matInput>
+  </mat-form-field>
+  <mat-form-field class="item" appearance="outline">
+    <mat-label>Valeurs</mat-label>
+    <textarea [(ngModel)]="item" cdkTextareaAutosize matInput cdkAutosizeMaxRows="10"></textarea>
+  </mat-form-field>
+  <button class="button" mat-raised-button color="primary" (click)="generate()" >Obtenir</button>
+</div>
+
+<div class="output center">
+  <mat-form-field class="result" appearance="outline">
+    <textarea [readonly]="true" cdkScrollable cdkTextareaAutosize matInput cdkAutosizeMaxRows="10">{{output}}</textarea>
+  </mat-form-field>
+</div>
