@@ -1,0 +1,52 @@
+<div class="title">
+  <h1>Convertisseur de texte</h1>
+</div>
+<!--Input-->
+  <div class="center input">
+    <mat-form-field class="content" appearance="outline">
+      <mat-label>Insérez votre texte ici</mat-label>
+      <textarea matInput type="text" cdkTextareaAutosize #autosize="cdkTextareaAutosize" cdkAutosizeMinRows="1" cdkAutosizeMaxRows="10" [(ngModel)]="textInput"></textarea>
+    </mat-form-field>
+  </div>
+  <!--Output-->
+<div class="output">
+  <ul>
+    <li>
+        <mat-form-field class="content" appearance="outline">
+          <mat-label>Minuscule</mat-label>
+          <textarea [readonly]="true" matInput cdkTextareaAutosize cdkScrollable cdkAutosizeMaxRows="10">{{convertToLowerCase()}}</textarea>
+        </mat-form-field>
+    </li>
+
+    <li>
+      <mat-form-field class="content" appearance="outline">
+        <mat-label>Majuscule</mat-label>
+        <textarea [readonly]="true" matInput cdkTextareaAutosize #autosize="cdkTextareaAutosize" cdkAutosizeMinRows="1" cdkAutosizeMaxRows="10">{{convertToUpperCase()}}</textarea>
+      </mat-form-field>
+    </li>
+    <li>
+      <mat-form-field class="content" appearance="outline">
+        <mat-label>Phrase</mat-label>
+        <textarea [readonly]="true" matInput cdkTextareaAutosize #autosize="cdkTextareaAutosize" cdkAutosizeMinRows="1" cdkAutosizeMaxRows="10">{{convertToSentenceCase()}}</textarea>
+      </mat-form-field>
+    </li>
+    <li>
+      <mat-form-field class="content" appearance="outline">
+        <mat-label>Titre</mat-label>
+        <textarea [readonly]="true" matInput cdkTextareaAutosize #autosize="cdkTextareaAutosize" cdkAutosizeMinRows="1" cdkAutosizeMaxRows="10">{{convertToTitleCase()}}</textarea>
+      </mat-form-field>
+    </li>
+    <li>
+      <mat-form-field class="content" appearance="outline">
+        <mat-label>Inversé</mat-label>
+        <textarea [readonly]="true" matInput cdkTextareaAutosize #autosize="cdkTextareaAutosize" cdkAutosizeMinRows="1" cdkAutosizeMaxRows="10">{{convertToInvert()}}</textarea>
+      </mat-form-field>
+    </li>
+    <li>
+      <mat-form-field class="content" appearance="outline">
+        <mat-label>Retourné</mat-label>
+        <textarea [readonly]="true" matInput cdkTextareaAutosize #autosize="cdkTextareaAutosize" cdkAutosizeMinRows="1" cdkAutosizeMaxRows="10">{{convertToReverse()}}</textarea>
+      </mat-form-field>
+    </li>
+  </ul>
+</div>

@@ -1,0 +1,19 @@
+<div class="title"><h1>Générateur de Lorem ipsum</h1></div>
+<div class="input center">
+  <mat-form-field class="nb-form" appearance="outline">
+    <input matInput [(ngModel)]="nb">
+  </mat-form-field>
+  <mat-form-field class="type-form" appearance="outline">
+    <mat-select [(value)]="type" >
+      <mat-option value="word">Mots</mat-option>
+      <mat-option value="sentence">Phrases</mat-option>
+      <mat-option value="paragraph">Paragraphes</mat-option>
+    </mat-select>
+  </mat-form-field>
+</div>
+
+<div class="output center">
+<mat-form-field class="lorem-form" appearance="outline">
+  <textarea [readonly]="true" cdkScrollable cdkTextareaAutosize cdkAutosizeMaxRows='20' cdkAutosizeMinRows='20' matInput>{{output()}}</textarea>
+</mat-form-field>
+</div>

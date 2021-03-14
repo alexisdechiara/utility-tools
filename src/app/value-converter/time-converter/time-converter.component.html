@@ -1,0 +1,45 @@
+<div class="title">
+  <h1>Convertisseur de temps</h1>
+</div>
+<div class="row center">
+  <mat-form-field appearance="outline" class="forms">
+    <mat-label>Valeur</mat-label>
+    <input matInput [(ngModel)]="valueInput" >
+  </mat-form-field>
+  <mat-form-field appearance="outline" class="forms">
+    <mat-label>Unité</mat-label>
+    <mat-select [(value)]="unitInput">
+      <mat-option value="seconde">Seconde</mat-option>
+      <mat-option value="minute">Minute</mat-option>
+      <mat-option value="hour">Heure</mat-option>
+      <mat-option value="day">Jour</mat-option>
+      <mat-option value="week">Semaine</mat-option>
+      <mat-option value="month">Mois <i>(sur 30 jours)</i></mat-option>
+      <mat-option value="year">Année</mat-option>
+      <mat-option value="century">Siècle</mat-option>
+      <mat-option value="millennium">Millénaire</mat-option>
+    </mat-select>
+  </mat-form-field>
+</div>
+<div class="row center">
+  <mat-icon class="row">south</mat-icon>
+</div>
+<div class="row center">
+  <mat-form-field appearance="outline" class="forms">
+    <mat-label>Résultat</mat-label>
+    <input [readonly]="true" matInput value="{{valueOutput()}}" >
+  </mat-form-field>
+  <mat-form-field appearance="outline" class="forms">
+    <mat-label>Unité</mat-label>
+    <mat-select [(value)]="unitOutput">
+      <mat-option value="seconde">Seconde</mat-option>
+      <mat-option value="minute">Minute</mat-option>
+      <mat-option value="hour">Heure</mat-option>
+      <mat-option value="day">Jour</mat-option>
+      <mat-option value="month">Mois</mat-option>
+      <mat-option value="years">Année</mat-option>
+      <mat-option value="century">Siècle</mat-option>
+      <mat-option value="millennium">Millénaire</mat-option>
+    </mat-select>
+  </mat-form-field>
+</div>

@@ -1,0 +1,54 @@
+<div class="title">
+  <h1>Convertisseur de volume</h1>
+</div>
+<div class="row center">
+  <mat-form-field appearance="outline" class="forms">
+    <mat-label>Valeur</mat-label>
+    <input matInput [(ngModel)]="valueInput" >
+  </mat-form-field>
+  <mat-form-field appearance="outline" class="forms">
+    <mat-label>Préfixe</mat-label>
+    <mat-select [(value)]="prefixInput" >
+      <mat-option value="kilo">Kilo</mat-option>
+      <mat-option value="hecto">Hecto</mat-option>
+      <mat-option value="deca">Déca</mat-option>
+      <mat-option value="none"></mat-option>
+      <mat-option value="deci">Déci</mat-option>
+      <mat-option value="centi">Centi</mat-option>
+      <mat-option value="milli">Milli</mat-option>
+    </mat-select>
+  </mat-form-field>
+  <mat-form-field appearance="outline" class="forms">
+    <mat-label>Unité</mat-label>
+    <mat-select [(value)]="unitInput">
+      <mat-option value="liter">Litre</mat-option>
+    </mat-select>
+  </mat-form-field>
+</div>
+<div class="row center">
+  <mat-icon class="row">south</mat-icon>
+</div>
+<div class="row center">
+  <mat-form-field appearance="outline" class="forms">
+    <mat-label>Résultat</mat-label>
+    <input [readonly]="true" matInput value="{{valueOutput()}}" >
+  </mat-form-field>
+  <mat-form-field appearance="outline" class="forms">
+    <mat-label>Préfixe</mat-label>
+    <mat-select [(value)]="prefixOutput" >
+      <mat-option value="kilo">Kilo</mat-option>
+      <mat-option value="hecto">Hecto</mat-option>
+      <mat-option value="deca">Déca</mat-option>
+      <mat-option value="none"></mat-option>
+      <mat-option value="deci">Déci</mat-option>
+      <mat-option value="centi">Centi</mat-option>
+      <mat-option value="milli">Milli</mat-option>
+    </mat-select>
+  </mat-form-field>
+  <mat-form-field appearance="outline" class="forms">
+    <mat-label>Unité</mat-label>
+    <mat-select [(value)]="unitOutput">
+      <mat-option value="liter">Litre</mat-option>
+    </mat-select>
+  </mat-form-field>
+</div>

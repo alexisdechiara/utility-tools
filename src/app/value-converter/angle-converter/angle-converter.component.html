@@ -1,0 +1,34 @@
+<div class="title">
+  <h1>Convertisseur d'angle</h1>
+</div>
+<div class="row center">
+  <mat-form-field appearance="outline" class="forms">
+    <mat-label>Valeur</mat-label>
+    <input matInput [(ngModel)]="valueInput" >
+  </mat-form-field>
+  <mat-form-field appearance="outline" class="forms">
+    <mat-label>Unité</mat-label>
+    <mat-select [(value)]="unitInput">
+      <mat-option value="radian">Radian</mat-option>
+      <mat-option value="degree">Degré</mat-option>
+      <mat-option value="grade">Grade</mat-option>
+    </mat-select>
+  </mat-form-field>
+</div>
+<div class="row center">
+  <mat-icon class="row">south</mat-icon>
+</div>
+<div class="row center">
+  <mat-form-field appearance="outline" class="forms">
+    <mat-label>Résultat</mat-label>
+    <input [readonly]="true" matInput value="{{valueOutput()}}" >
+  </mat-form-field>
+  <mat-form-field appearance="outline" class="forms">
+    <mat-label>Unité</mat-label>
+    <mat-select [(value)]="unitOutput">
+      <mat-option value="radian">Radian</mat-option>
+      <mat-option value="degree">Degré</mat-option>
+      <mat-option value="grade">Grade</mat-option>
+    </mat-select>
+  </mat-form-field>
+</div>
