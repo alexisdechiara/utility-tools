@@ -99,11 +99,28 @@ export class TextConverterComponent implements OnInit {
       ['X', 'X'],
       ['Y', 'ʎ'],
       ['Z', 'Z'],
-      [' ', ' ']
+      [' ', ' '],
+      [ ',', 'ʻ'],
+      [ '.', '·'],
+      [ ':', ':'],
+      [ ';', ';'],
+      [ '!', '¡'],
+      [ '?', '¿'],
+      [ '(', '('],
+      [ ')', ')'],
+      [ '[', '['],
+      [ ']', ']'],
+      [ '{', '{'],
+      [ '}', '}']
     ]);
+    const normal = this.textInput.normalize('NFD').replace(/[\u0300-\u036f]/g, '');
     let reverse = '';
-    for (let i = this.textInput.length - 1; i >= 0; i--) {
-      reverse += reverseKey.get(this.textInput[i]);
+    for (let i = normal.length - 1; i >= 0; i--) {
+      if (typeof normal[i] === 'undefined'){
+        reverse += normal[i];
+      }else {
+        reverse += reverseKey.get(normal[i]);
+      }
     }
     return reverse;
   }
