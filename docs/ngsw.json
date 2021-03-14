@@ -1,7 +1,7 @@
 {
   "configVersion": 1,
-  "timestamp": 1613725885157,
-  "index": "https://alexisdechiara.github.io/utility-tools/index.html",
+  "timestamp": 1615747542413,
+  "index": "/utility-tools/index.html",
   "assetGroups": [
     {
       "name": "app",
@@ -11,13 +11,13 @@
         "ignoreVary": true
       },
       "urls": [
-        "https://alexisdechiara.github.io/utility-tools/favicon.ico",
-        "https://alexisdechiara.github.io/utility-tools/index.html",
-        "https://alexisdechiara.github.io/utility-tools/main.2db3877d73a639b91319.js",
-        "https://alexisdechiara.github.io/utility-tools/manifest.webmanifest",
-        "https://alexisdechiara.github.io/utility-tools/polyfills.94daefd414b8355106ab.js",
-        "https://alexisdechiara.github.io/utility-tools/runtime.7b63b9fd40098a2e8207.js",
-        "https://alexisdechiara.github.io/utility-tools/styles.38717ec4a37b9d8d8cb8.css"
+        "/utility-tools/favicon.ico",
+        "/utility-tools/index.html",
+        "/utility-tools/main.a336f48a23d96910a69d.js",
+        "/utility-tools/manifest.webmanifest",
+        "/utility-tools/polyfills.94daefd414b8355106ab.js",
+        "/utility-tools/runtime.7b63b9fd40098a2e8207.js",
+        "/utility-tools/styles.38717ec4a37b9d8d8cb8.css"
       ],
       "patterns": []
     },
@@ -29,35 +29,35 @@
         "ignoreVary": true
       },
       "urls": [
-        "https://alexisdechiara.github.io/utility-tools/assets/icons/icon-128x128.png",
-        "https://alexisdechiara.github.io/utility-tools/assets/icons/icon-144x144.png",
-        "https://alexisdechiara.github.io/utility-tools/assets/icons/icon-152x152.png",
-        "https://alexisdechiara.github.io/utility-tools/assets/icons/icon-192x192.png",
-        "https://alexisdechiara.github.io/utility-tools/assets/icons/icon-384x384.png",
-        "https://alexisdechiara.github.io/utility-tools/assets/icons/icon-512x512.png",
-        "https://alexisdechiara.github.io/utility-tools/assets/icons/icon-72x72.png",
-        "https://alexisdechiara.github.io/utility-tools/assets/icons/icon-96x96.png"
+        "/utility-tools/assets/icons/icon-128x128.png",
+        "/utility-tools/assets/icons/icon-144x144.png",
+        "/utility-tools/assets/icons/icon-152x152.png",
+        "/utility-tools/assets/icons/icon-192x192.png",
+        "/utility-tools/assets/icons/icon-384x384.png",
+        "/utility-tools/assets/icons/icon-512x512.png",
+        "/utility-tools/assets/icons/icon-72x72.png",
+        "/utility-tools/assets/icons/icon-96x96.png"
       ],
       "patterns": []
     }
   ],
   "dataGroups": [],
   "hashTable": {
-    "https://alexisdechiara.github.io/utility-tools/assets/icons/icon-128x128.png": "dae3b6ed49bdaf4327b92531d4b5b4a5d30c7532",
-    "https://alexisdechiara.github.io/utility-tools/assets/icons/icon-144x144.png": "b0bd89982e08f9bd2b642928f5391915b74799a7",
-    "https://alexisdechiara.github.io/utility-tools/assets/icons/icon-152x152.png": "7479a9477815dfd9668d60f8b3b2fba709b91310",
-    "https://alexisdechiara.github.io/utility-tools/assets/icons/icon-192x192.png": "1abd80d431a237a853ce38147d8c63752f10933b",
-    "https://alexisdechiara.github.io/utility-tools/assets/icons/icon-384x384.png": "329749cd6393768d3131ed6304c136b1ca05f2fd",
-    "https://alexisdechiara.github.io/utility-tools/assets/icons/icon-512x512.png": "559d9c4318b45a1f2b10596bbb4c960fe521dbcc",
-    "https://alexisdechiara.github.io/utility-tools/assets/icons/icon-72x72.png": "c457e56089a36952cd67156f9996bc4ce54a5ed9",
-    "https://alexisdechiara.github.io/utility-tools/assets/icons/icon-96x96.png": "3914125a4b445bf111c5627875fc190f560daa41",
-    "https://alexisdechiara.github.io/utility-tools/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
-    "https://alexisdechiara.github.io/utility-tools/index.html": "43505cfd587a48db25664f0804fbb97c2e1e9c45",
-    "https://alexisdechiara.github.io/utility-tools/main.2db3877d73a639b91319.js": "623627b1a0fc7d22bad9dfc31de1169035157438",
-    "https://alexisdechiara.github.io/utility-tools/manifest.webmanifest": "adaae867cd2abff43ad20c9ab3a055d58cdc55be",
-    "https://alexisdechiara.github.io/utility-tools/polyfills.94daefd414b8355106ab.js": "cfe7b0b53e96bff9ba384b4d497c08475a617d62",
-    "https://alexisdechiara.github.io/utility-tools/runtime.7b63b9fd40098a2e8207.js": "a9aafcf49f49145093fc831efd9b8e2f6c71bb9c",
-    "https://alexisdechiara.github.io/utility-tools/styles.38717ec4a37b9d8d8cb8.css": "baf37aa3994f2438e0f60f4db6b7aa1a26c8168e"
+    "/utility-tools/assets/icons/icon-128x128.png": "dae3b6ed49bdaf4327b92531d4b5b4a5d30c7532",
+    "/utility-tools/assets/icons/icon-144x144.png": "b0bd89982e08f9bd2b642928f5391915b74799a7",
+    "/utility-tools/assets/icons/icon-152x152.png": "7479a9477815dfd9668d60f8b3b2fba709b91310",
+    "/utility-tools/assets/icons/icon-192x192.png": "1abd80d431a237a853ce38147d8c63752f10933b",
+    "/utility-tools/assets/icons/icon-384x384.png": "329749cd6393768d3131ed6304c136b1ca05f2fd",
+    "/utility-tools/assets/icons/icon-512x512.png": "559d9c4318b45a1f2b10596bbb4c960fe521dbcc",
+    "/utility-tools/assets/icons/icon-72x72.png": "c457e56089a36952cd67156f9996bc4ce54a5ed9",
+    "/utility-tools/assets/icons/icon-96x96.png": "3914125a4b445bf111c5627875fc190f560daa41",
+    "/utility-tools/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
+    "/utility-tools/index.html": "0bea48571e1f3691be46b59252ceb286b491ff7c",
+    "/utility-tools/main.a336f48a23d96910a69d.js": "c53dc883a53e87077f512b61938438fb1b0e0623",
+    "/utility-tools/manifest.webmanifest": "adaae867cd2abff43ad20c9ab3a055d58cdc55be",
+    "/utility-tools/polyfills.94daefd414b8355106ab.js": "cfe7b0b53e96bff9ba384b4d497c08475a617d62",
+    "/utility-tools/runtime.7b63b9fd40098a2e8207.js": "a9aafcf49f49145093fc831efd9b8e2f6c71bb9c",
+    "/utility-tools/styles.38717ec4a37b9d8d8cb8.css": "baf37aa3994f2438e0f60f4db6b7aa1a26c8168e"
   },
   "navigationUrls": [
     {
