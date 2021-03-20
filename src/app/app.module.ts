@@ -28,6 +28,7 @@ import { NumberGeneratorComponent } from './generator/number-generator/number-ge
 import { TimeGeneratorComponent } from './generator/time-generator/time-generator.component';
 import { PasswordGeneratorComponent } from './generator/password-generator/password-generator.component';
 import { ItemGeneratorComponent } from './generator/item-generator/item-generator.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
@@ -50,7 +51,8 @@ import { ItemGeneratorComponent } from './generator/item-generator/item-generato
     NumberGeneratorComponent,
     TimeGeneratorComponent,
     PasswordGeneratorComponent,
-    ItemGeneratorComponent
+    ItemGeneratorComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,

@@ -16,6 +16,7 @@ import {PasswordGeneratorComponent} from './generator/password-generator/passwor
 import {TimeGeneratorComponent} from './generator/time-generator/time-generator.component';
 import {VolumeConverterComponent} from './value-converter/volume-converter/volume-converter.component';
 import {LoremGeneratorComponent} from './generator/lorem-generator/lorem-generator.component';
+import {HomeComponent} from './home/home.component';
 
 const routes: Routes = [{path: 'converter/text', component: TextConverterComponent},
                         {path: 'converter/angle', component: AngleConverterComponent},
@@ -32,7 +33,8 @@ const routes: Routes = [{path: 'converter/text', component: TextConverterCompone
                         {path: 'generator/lorem-ipsum', component: LoremGeneratorComponent},
                         {path: 'generator/number', component: NumberGeneratorComponent},
                         {path: 'generator/password', component: PasswordGeneratorComponent},
-                        {path: 'generator/date', component: TimeGeneratorComponent}];
+                        {path: 'generator/date', component: TimeGeneratorComponent},
+                        {path: '', component: HomeComponent}];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

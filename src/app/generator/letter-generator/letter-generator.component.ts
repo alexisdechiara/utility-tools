@@ -8,8 +8,6 @@ import { Component, OnInit } from '@angular/core';
 export class LetterGeneratorComponent implements OnInit {
 
   nb = '1';
-  min = '0';
-  max = '100';
   type = 'lowerCase';
   output = '';
 
