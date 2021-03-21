@@ -11,6 +11,8 @@ export class AngleConverterComponent implements OnInit {
   unitInput = 'degree';
   unitOutput = 'radian';
 
+  constructor() { }
+
   valueOutput(): string {
     const value = this.convertUnit(Number(this.valueInput), this.unitInput, this.unitOutput);
     if (value === 0){
@@ -43,8 +45,6 @@ export class AngleConverterComponent implements OnInit {
         default: return 0;
     }
   }
-
-  constructor() { }
 
   ngOnInit(): void {
   }

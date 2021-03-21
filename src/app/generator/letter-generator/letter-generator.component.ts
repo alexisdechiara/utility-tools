@@ -11,6 +11,8 @@ export class LetterGeneratorComponent implements OnInit {
   type = 'lowerCase';
   output = '';
 
+  constructor() { }
+
   generate(): void{
     let letters = '';
     const alpha = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
@@ -23,8 +25,6 @@ export class LetterGeneratorComponent implements OnInit {
     }
     this.output = letters;
   }
-
-  constructor() { }
 
   ngOnInit(): void {
   }

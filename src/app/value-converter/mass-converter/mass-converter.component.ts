@@ -7,12 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MassConverterComponent implements OnInit {
 
-
   valueInput = '';
   prefixInput = '';
   unitInput = 'gram';
   prefixOutput = '';
   unitOutput = 'gram';
+
+  constructor() { }
 
   valueOutput(): string {
     const value = (this.fromUnit(this.toUnit(Number(this.valueInput), this.prefixInput), this.prefixOutput));
@@ -47,8 +48,6 @@ export class MassConverterComponent implements OnInit {
       default: return value;
     }
   }
-
-  constructor() { }
 
   ngOnInit(): void {
   }

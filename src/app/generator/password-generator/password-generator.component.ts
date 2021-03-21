@@ -14,6 +14,8 @@ export class PasswordGeneratorComponent implements OnInit {
   output = '';
   size = 16;
 
+  constructor() { }
+
   generate(): void{
     this.output = this.getPassword();
   }
@@ -47,8 +49,6 @@ export class PasswordGeneratorComponent implements OnInit {
     }
     return res;
   }
-
-  constructor() { }
 
   ngOnInit(): void {
   }

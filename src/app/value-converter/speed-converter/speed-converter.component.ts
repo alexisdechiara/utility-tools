@@ -15,6 +15,8 @@ export class SpeedConverterComponent implements OnInit {
   unitOutput = '';
   timeOutput = '';
 
+  constructor() { }
+
   valueOutput(): string {
     const time = (this.fromTime(this.toTime(Number(this.valueInput), this.prefixInput), this.prefixOutput));
     const distance = (this.fromUnit(this.toUnit(Number(this.valueInput), this.prefixInput), this.prefixOutput));
@@ -67,8 +69,6 @@ export class SpeedConverterComponent implements OnInit {
       default: return value;
     }
   }
-
-  constructor() { }
 
   ngOnInit(): void {
   }

@@ -13,6 +13,8 @@ export class NumberGeneratorComponent implements OnInit {
   type = 'integer';
   output = '';
 
+  constructor() { }
+
   generate(): void{
     let numbers = '';
     if (this.type === 'integer'){
@@ -26,7 +28,6 @@ export class NumberGeneratorComponent implements OnInit {
     }
     this.output = numbers;
   }
-  constructor() { }
 
   ngOnInit(): void {
   }

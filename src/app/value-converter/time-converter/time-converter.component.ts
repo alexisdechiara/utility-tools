@@ -7,10 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TimeConverterComponent implements OnInit {
 
-
   valueInput = '';
   unitInput = 'minute';
   unitOutput = 'seconde';
+
+  constructor() { }
 
   valueOutput(): string {
     const value = (this.fromUnit(this.toUnit(Number(this.valueInput), this.unitInput), this.unitOutput));
@@ -48,8 +49,6 @@ export class TimeConverterComponent implements OnInit {
       default: return value;
     }
   }
-
-  constructor() { }
 
   ngOnInit(): void {
   }

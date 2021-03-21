@@ -13,6 +13,8 @@ export class LuminousConverterComponent implements OnInit {
   prefixOutput = '';
   unitOutput = 'lumen';
 
+  constructor() { }
+
   valueOutput(): string {
     const value = (this.fromUnit(this.toUnit(Number(this.valueInput), this.prefixInput), this.prefixOutput));
     if (value === 0){
@@ -45,8 +47,6 @@ export class LuminousConverterComponent implements OnInit {
       default: return value;
     }
   }
-
-  constructor() { }
 
   ngOnInit(): void {
   }

@@ -13,6 +13,8 @@ export class DistanceConverterComponent implements OnInit {
   prefixOutput = '';
   unitOutput = 'meter';
 
+  constructor() { }
+
   valueOutput(): string {
     const value = (this.fromUnit(this.toUnit(Number(this.valueInput), this.prefixInput), this.prefixOutput));
     if (value === 0){
@@ -46,8 +48,6 @@ export class DistanceConverterComponent implements OnInit {
       default: return value;
     }
   }
-
-  constructor() { }
 
   ngOnInit(): void {
   }
