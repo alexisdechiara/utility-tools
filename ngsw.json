@@ -1,0 +1,81 @@
+{
+  "configVersion": 1,
+  "timestamp": 1616324431879,
+  "index": "/utility-tools/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "/utility-tools/favicon.ico",
+        "/utility-tools/index.html",
+        "/utility-tools/main.ceccc0cfbf007875303d.js",
+        "/utility-tools/manifest.webmanifest",
+        "/utility-tools/polyfills.00096ed7d93ed26ee6df.js",
+        "/utility-tools/runtime.7b63b9fd40098a2e8207.js",
+        "/utility-tools/styles.338607787b3635e1ced4.css"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "/utility-tools/assets/icons/icon-128x128.png",
+        "/utility-tools/assets/icons/icon-144x144.png",
+        "/utility-tools/assets/icons/icon-152x152.png",
+        "/utility-tools/assets/icons/icon-192x192.png",
+        "/utility-tools/assets/icons/icon-384x384.png",
+        "/utility-tools/assets/icons/icon-512x512.png",
+        "/utility-tools/assets/icons/icon-72x72.png",
+        "/utility-tools/assets/icons/icon-96x96.png"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [],
+  "hashTable": {
+    "/utility-tools/assets/icons/icon-128x128.png": "dae3b6ed49bdaf4327b92531d4b5b4a5d30c7532",
+    "/utility-tools/assets/icons/icon-144x144.png": "b0bd89982e08f9bd2b642928f5391915b74799a7",
+    "/utility-tools/assets/icons/icon-152x152.png": "7479a9477815dfd9668d60f8b3b2fba709b91310",
+    "/utility-tools/assets/icons/icon-192x192.png": "1abd80d431a237a853ce38147d8c63752f10933b",
+    "/utility-tools/assets/icons/icon-384x384.png": "329749cd6393768d3131ed6304c136b1ca05f2fd",
+    "/utility-tools/assets/icons/icon-512x512.png": "559d9c4318b45a1f2b10596bbb4c960fe521dbcc",
+    "/utility-tools/assets/icons/icon-72x72.png": "c457e56089a36952cd67156f9996bc4ce54a5ed9",
+    "/utility-tools/assets/icons/icon-96x96.png": "3914125a4b445bf111c5627875fc190f560daa41",
+    "/utility-tools/favicon.ico": "153ddc3e510bb0de9a8e748f324e929915eb01b8",
+    "/utility-tools/index.html": "6d86ddfce41088ac3a9be10a6b7e3d8b6ae0ed9d",
+    "/utility-tools/main.ceccc0cfbf007875303d.js": "fe2929a017658cef8b44293900b569d009a34d59",
+    "/utility-tools/manifest.webmanifest": "adaae867cd2abff43ad20c9ab3a055d58cdc55be",
+    "/utility-tools/polyfills.00096ed7d93ed26ee6df.js": "cfe7b0b53e96bff9ba384b4d497c08475a617d62",
+    "/utility-tools/runtime.7b63b9fd40098a2e8207.js": "a9aafcf49f49145093fc831efd9b8e2f6c71bb9c",
+    "/utility-tools/styles.338607787b3635e1ced4.css": "9769bad5c88d0756cb2f5a3e3023c657cda5158f"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ],
+  "navigationRequestStrategy": "performance"
+}
