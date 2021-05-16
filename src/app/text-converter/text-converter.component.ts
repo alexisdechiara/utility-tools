@@ -9,6 +9,8 @@ export class TextConverterComponent implements OnInit {
 
   textInput = '';
 
+  constructor() { }
+
   convertToLowerCase(): string {
     return this.textInput.toLowerCase();
   }
@@ -124,10 +126,6 @@ export class TextConverterComponent implements OnInit {
     }
     return reverse;
   }
-
-
-
-  constructor() { }
 
   ngOnInit(): void {
   }

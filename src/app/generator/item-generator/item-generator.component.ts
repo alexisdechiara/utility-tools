@@ -11,6 +11,8 @@ export class ItemGeneratorComponent implements OnInit {
   item = '';
   output = '';
 
+  constructor() { }
+
   generate(): void{
     this.output = this.getItems();
   }
@@ -28,8 +30,6 @@ export class ItemGeneratorComponent implements OnInit {
     }
     return res;
   }
-
-  constructor() { }
 
   ngOnInit(): void {
   }

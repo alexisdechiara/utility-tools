@@ -8,10 +8,10 @@ import { Component, OnInit } from '@angular/core';
 export class LetterGeneratorComponent implements OnInit {
 
   nb = '1';
-  min = '0';
-  max = '100';
   type = 'lowerCase';
   output = '';
+
+  constructor() { }
 
   generate(): void{
     let letters = '';
@@ -25,8 +25,6 @@ export class LetterGeneratorComponent implements OnInit {
     }
     this.output = letters;
   }
-
-  constructor() { }
 
   ngOnInit(): void {
   }

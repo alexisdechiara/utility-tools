@@ -13,6 +13,8 @@ export class VolumeConverterComponent implements OnInit {
   prefixOutput = '';
   unitOutput = 'liter';
 
+  constructor() { }
+
   valueOutput(): string {
     const value = (this.fromUnit(this.toUnit(Number(this.valueInput), this.prefixInput), this.prefixOutput));
     if (value === 0){
@@ -45,8 +47,6 @@ export class VolumeConverterComponent implements OnInit {
       default: return value;
     }
   }
-
-  constructor() { }
 
   ngOnInit(): void {
   }

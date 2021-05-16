@@ -13,8 +13,9 @@ export class TimeGeneratorComponent implements OnInit {
   day = true;
   month = true;
   year = true;
-
   output = '';
+
+  constructor() { }
 
   public generate(): void {
     const date = new Date(this.random( 0, 3000), this.random(0, 11), this.random(0, 31), this.random(0, 24), this.random(0, 60), this.random(0, 60));
@@ -44,8 +45,6 @@ export class TimeGeneratorComponent implements OnInit {
   random(min: number, max: number): number {
     return Math.floor(Math.random() * (max - min + 1)) + min;
   }
-
-  constructor() { }
 
   ngOnInit(): void {
   }
