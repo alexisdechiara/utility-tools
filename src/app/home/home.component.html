@@ -1,10 +1,69 @@
-<h1>Bienvenue sur Utility-tools</h1>
+<h1> <img src="assets/img/logo-extended.svg" alt="Logo" width="512px"></h1>
 <div class="content">
-  <h2>Ce site vous permet de : </h2>
-    <ul>
-      <li>Convertir du texte</li>
-      <li>Convertir des valeurs</li>
-      <li>Générer aléatoirement une valeur</li>
-      <li>Réaliser des calculs</li>
-    </ul>
+  <mat-card class="card">
+    <mat-card-header class="header">
+      <div mat-card-avatar class="header"><mat-icon>article</mat-icon></div>
+      <mat-card-title class="header">Convertisseur de texte</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <mat-action-list>
+        <button mat-list-item routerLink="/converter/text"><mat-icon matListIcon>format_size</mat-icon><span matLine>Minuscule</span></button>
+        <button mat-list-item routerLink="/converter/text"><mat-icon matListIcon>text_fields</mat-icon><span matLine>Majuscule</span></button>
+        <button mat-list-item routerLink="/converter/text"><mat-icon matListIcon>notes</mat-icon><span matLine>Phrase</span></button>
+        <button mat-list-item routerLink="/converter/text"><mat-icon matListIcon>Title</mat-icon><span matLine>Titre</span></button>
+        <button mat-list-item routerLink="/converter/text"><mat-icon matListIcon>align_vertical_center</mat-icon><span matLine>Inversé</span></button>
+        <button mat-list-item routerLink="/converter/text"><mat-icon matListIcon>align_horizontal_center</mat-icon><span matLine>retourné</span></button>
+      </mat-action-list>
+    </mat-card-content>
+  </mat-card>
+  <mat-card class="card">
+    <mat-card-header class="header">
+      <div mat-card-avatar class="header"><mat-icon>pin</mat-icon></div>
+      <mat-card-title class="header">Convertisseur de valeur</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <mat-action-list>
+        <button routerLink="/converter/volume" mat-list-item><mat-icon matListIcon>aspect_ratio</mat-icon><span matLine>Volume</span></button>
+        <button routerLink="converter/mass" mat-list-item><mat-icon matListIcon>fitness_center</mat-icon><span matLine>Masse</span></button>
+        <button routerLink="/converter/distance" mat-list-item><mat-icon matListIcon>square_foot</mat-icon><span matLine>Distance</span></button>
+        <button routerLink="/converter/speed" mat-list-item><mat-icon matListIcon>speed</mat-icon><span matLine>Vitesse</span></button>
+        <button routerLink="/converter/angle" mat-list-item><mat-icon matListIcon>border_style</mat-icon><span matLine>Angle</span></button>
+        <button routerLink="/converter/intensity" mat-list-item><mat-icon matListIcon>bolt</mat-icon><span matLine>Intensité électrique</span></button>
+        <button routerLink="/converter/substance-amount" mat-list-item><mat-icon matListIcon>bubble_chart</mat-icon><span matLine>Quantité de matière</span></button>
+        <button routerLink="/converter/luminous-energy" mat-list-item><mat-icon matListIcon>emoji_objects</mat-icon><span matLine>Quantité de lumière</span></button>
+      </mat-action-list>
+    </mat-card-content>
+  </mat-card>
+  <mat-card class="card">
+    <mat-card-header class="header">
+      <div mat-card-avatar class="header"><mat-icon>inbox</mat-icon></div>
+      <mat-card-title class="header">Générateur</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <mat-action-list>
+        <button routerLink="/generator/lorem-ipsum" mat-list-item><mat-icon matListIcon>format_align_left</mat-icon><span matLine>Lorem Ipsum</span></button>
+        <button routerLink="/generator/letter" mat-list-item><mat-icon matListIcon>format_bold</mat-icon><span matLine>Lettre</span></button>
+        <button routerLink="/generator/number" mat-list-item><mat-icon matListIcon>exposure_zero</mat-icon><span matLine>Nombre</span></button>
+        <button routerLink="/generator/date" mat-list-item><mat-icon matListIcon>calendar_today</mat-icon><span matLine>Date</span></button>
+        <button routerLink="/generator/password" mat-list-item><mat-icon matListIcon>lock</mat-icon><span matLine>Mot de passe</span></button>
+        <button routerLink="/generator/item" mat-list-item><mat-icon matListIcon>table_chart</mat-icon><span matLine>Élément d'un tableau</span></button>
+      </mat-action-list>
+    </mat-card-content>
+  </mat-card>
+  <mat-card class="card">
+    <mat-card-header class="header">
+      <div mat-card-avatar class="header"><mat-icon>calculate</mat-icon></div>
+      <mat-card-title class="header">Calculateur</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <mat-action-list>
+        <button mat-list-item><mat-icon matListIcon>functions</mat-icon><span matLine>Moyenne pondéré</span></button>
+        <button mat-list-item><mat-icon matListIcon>calculate</mat-icon><span matLine>Pourcentage</span></button>
+        <button mat-list-item><mat-icon matListIcon>details</mat-icon><span matLine>Théorème de pythagore</span></button>
+        <button mat-list-item><mat-icon matListIcon>calendar_today</mat-icon><span matLine>Théorème de thalès</span></button>
+        <button mat-list-item><mat-icon matListIcon>speed</mat-icon><span matLine>Vitesse</span></button>
+        <button mat-list-item><mat-icon matListIcon>date_range</mat-icon><span matLine>Écart de date</span></button>
+      </mat-action-list>
+    </mat-card-content>
+  </mat-card>
 </div>
